@@ -1,89 +1,30 @@
+# GitHub Advanced Security sample demo
 
-<h1 align="center">Securing your code with GitHub Advanced Security</h1>
+**CASA EMEA Learning Days, 21 October 2026**
 
-<h5 align="center">
-  <img src="https://github.com/user-attachments/assets/6462fa90-6332-4e2b-8f34-ecd0b3932596" alt="Securing your code with GitHub Advanced Security" width="50%">
-</h5>
+This repository is a copy of [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/), a web shop written with security holes on purpose, used worldwide for security training. We use it to show what GitHub's three security scanners find and how a developer fixes it, all from the browser, in 45 minutes.
 
-<h5 align="center"><a href="https://github.com/joshjohanning">@joshjohanning</a> <a href="https://github.com/mickeygousset">@mickeygousset</a></h3>
+## What you will do
 
-<p align="center">
-  <a href="#workshop-labs">Workshop Labs</a>
-  <a href="#book-resources">Resources</a>
-</p>
+1. Switch on Dependabot, CodeQL code scanning and secret scanning
+2. Watch push protection refuse a leaked token
+3. Read one alert of each kind and let Copilot Autofix write a fix
+4. Put a SQL injection into a pull request, get blocked by a ruleset, accept the one-click fix
 
-- **Who is this for**: Enterprise - Engineering Leadership, Enterprise - Developers, Open Source Developers or Maintainers, Security Professionals, Startups, Security Leadership, Educators
-- **What you'll learn**: Here at GitHub, we like to say that "found means fixed." That's because when issues are found they can more easily be fixed. In this workshop you'll dive into a repository filled with security alerts and begin to remediate them using GitHub Advanced Security (GHAS) and Dependabot, effectively maintaining code integrity. You'll also encounter and resolve a few security issues using GitHub Codespaces and GitHub Copilot. The end goal? To learn and develop strategies to motivate your developers to turn reactive fixes into proactive security habits.
+## How to take part
 
----
+- You need a personal github.com account (not an enterprise-managed one), signed in, in a desktop browser. Nothing to install.
+- Click the green **Use this template** button at the top of this page, then **Create a new repository**. Keep it **Public**; that is what makes the security features free.
+- Follow the [Attendee Guide](./ATTENDEE-GUIDE.md) in your copy. It has every click and takes about 45 minutes.
 
-## Workshop Labs
+If you only have a work account, follow along on screen; the guide works the same afterwards on any personal account.
 
-### Lab 1 - GitHub Advanced Security Feature Introduction
+## Afterwards
 
-This lab will introduce you to GitHub Advanced Security (GHAS) and its features.
-
-- Get started here - [Lab 1](./_labs/lab1.md)
-
----
-
-### Lab 2 - Reviewing and Managing Security Alerts
-
-This lab will show you how to review and managed the alerts created in Lab 1.
-
-- Get started here - [Lab 2](./_labs/lab2.md)
-
----
-
-### Lab 3 - Hands-on with Code Scanning
-
-This lab will have you add some bad code, utilize repository rulesets to block the code, and Copilot Autofix to fix the code.
-
-- Get started here - [Lab 3](./_labs/lab3.md)
-
----
-
-### Lab 4 - Hands-on with Dependency Review
-
-This lab will have you utilize the Dependency Review action to stop a bad vulnerability in a pull request.
-
-- Get started here - [Lab 4](./_labs/lab4.md)
-
----
-
-### Lab 5 - Hands-on with Secret Scanning
-
-This lab will have you utilize Secret Scanning with Push Protection to prevent secrets from entering the codebase.
-
-- Get started here - [Lab 5](./_labs/lab5.md)
-
----
-
-### Lab 6 - Hands-on with Security Overview
-
-This lab will teach you how to effectively use the Security Overview to review and alerts and coverage in an organization.
-
-- Get started here - [Lab 6](./_labs/lab6.md)
-
----
-
-### Extra Credit: Advanced CodeQL Setup
-
-This open-ended extra credit lab will have you switch to the advanced CodeQL setup.
-
-- Get started here - [Extra Credit Lab 1](./_labs/lab7-ec.md)
-
----
-
-### Extra Credit: Custom Patterns for Secret Scanning
-
-This open-ended extra credit lab will have you create a custom secret scanning pattern.
-
-- Get started here - [Extra Credit Lab 2](./_labs/lab8-ec.md)
-
----
-
-## :book: Resources
-
-- [GitHub Docs - About GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security)
+- The full 8-lab workshop this demo was cut from, by GitHub's own team: [githubuniverseworkshops/juice-shop-ghas-workshop](https://github.com/githubuniverseworkshops/juice-shop-ghas-workshop). The lab files are still in [`_labs/`](./_labs/). Where they say "Code security" in Settings, the page is now called **Advanced Security**.
+- [About GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security)
 - [GitHub Security Learning Pathway](https://resources.github.com/learn/pathways/security/)
+
+## Credits
+
+Based on the GitHub Universe workshop *Securing your code with GitHub Advanced Security* by [@joshjohanning](https://github.com/joshjohanning) and [@mickeygousset](https://github.com/mickeygousset), MIT licensed. Juice Shop is an OWASP project.
